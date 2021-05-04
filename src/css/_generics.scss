@@ -1,0 +1,60 @@
+@use "components/palette";
+@use "components/type";
+@use "sass:color";
+
+body {
+  padding: 200px 0 200px 0;
+  color: palette.$black;
+  background: palette.$lightgreen;
+  background-image: palette.$whiteToLightgreen;
+  font-family: type.$overpass;
+  text-align: justify;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  border: type.$base palette.$lightgreen solid;
+}
+p {
+  margin-top: 0px;
+  line-height: type.$base-line-height;
+}
+
+h1,
+h2 {
+  font-family: type.$shrikhand;
+}
+h1,
+h3 {
+  color: palette.$olive;
+}
+h1 {
+  font-size: type.$heading-1;
+  text-align: center;
+  font-weight: normal;
+  letter-spacing: 5px;
+  text-transform: lowercase;
+}
+h2 {
+  color: palette.$lightgreen;
+  font-family: type.$shrikhand;
+  font-size: type.$heading-2;
+  font-weight: normal;
+  margin-bottom: type.$spacer-5;
+  text-transform: lowercase;
+}
+h3 {
+  font-size: type.$heading-3;
+  font-weight: 800;
+}
+a {
+  font-family: type.$shrikhand;
+  color: color.scale(palette.$olive, $lightness: -30%);
+  text-decoration: none;
+  transition: 1s color ease-in-out;
+  &:hover {
+    transition: 1s color ease-in-out;
+    color: palette.$olive;
+  }
+}
+figure {
+  margin: 0;
+}

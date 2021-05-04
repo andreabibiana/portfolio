@@ -1,0 +1,95 @@
+@use "components/palette";
+@use "components/type";
+
+%figure {
+    flex-basis: 50%;
+    position: relative;
+    margin-left: (type.$spacer-2 + 1px);
+    &::before {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        content: "";
+        top: -(type.$spacer-2);
+        left: -(type.$spacer-2);
+        z-index: -1;
+        border: 1px solid palette.$olive;
+    }
+    &.fig-70 {
+        flex-basis: 70%;
+    }
+    &.fig-30 {
+        flex-basis: 30%;
+    }
+    img {
+        max-width: 100%;
+    }
+}
+
+.works {
+    article {
+        display: flex;
+        justify-content: space-between;
+        &.featured {
+            background-color: palette.$lightgreen;
+            padding: type.$spacer-2;
+            flex-direction: column;
+            text-align: center;
+            padding: type.$spacer-5 type.$spacer-3;
+            h3 {
+                text-transform: lowercase;
+                font-family: type.$shrikhand;
+                font-weight: normal;
+                font-size: type.$spacer-4;
+                margin: 0 0 40px 0;
+            }
+            p {
+                width: 400px;
+                margin: 0 auto;
+                margin-bottom: type.$spacer-3;
+            }
+        }
+        & + article {
+            margin-top: type.$spacer-10;
+        }
+        & + h2 {
+            margin-top: (type.$base * 17.5);
+        } 
+    }
+    .description {
+        flex-basis: 30%;
+        text-align: justify;
+    }
+    a {
+        font-size: (type.$base * 1.75);
+        span {
+            font-size: 2.5rem;  
+          }
+    }
+    figcaption {
+        font-size: (type.$base * .875);
+        font-weight: 200;
+        margin-bottom: type.$spacer-1;
+    }
+    h2 + .featured {
+        margin-top: -(type.$spacer-5);
+    }
+    figure {
+        @extend %figure;
+    }
+}
+
+.feature {
+    display: block;
+    margin: 0 auto;
+    h1 {
+        text-align: left;
+    }
+    figure {
+        display:block;
+        @extend %figure;
+    }
+    a span {
+        font-size: 2rem;
+    }
+} 

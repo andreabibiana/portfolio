@@ -49,14 +49,33 @@ module.exports = {
         new MiniCssExtractPlugin(), 
         new HtmlWebpackPlugin({
             template: "./src/index.html"
-        }) 
+        }),
+        new HtmlWebpackPlugin({
+            filename: "works.html",
+            template: "./src/works.html"
+        }),
+        new HtmlWebpackPlugin({
+            filename: "articles/keane.html",
+            template: "./src/articles/keane.html"
+        }),
+        new HtmlWebpackPlugin({
+            filename: "articles/lscr.html",
+            template: "./src/articles/lscr.html"
+        }),
+        new HtmlWebpackPlugin({
+            filename: "articles/casa-flores.html",
+            template: "./src/articles/casa-flores.html"
+        }),
+        new HtmlWebpackPlugin({
+            filename: "articles/afaya.html",
+            template: "./src/articles/afaya.html"
+        }),
     ],
     resolve: {
         extensions: [".js"]
     },
     devtool: "source-map",
     devServer: {
-        contentBase: "./dist",
         hot: true
     }
 }

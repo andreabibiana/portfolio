@@ -1,13 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Webpack test</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>andrea bibiana vm | Diseño y Desarrollo Web</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.0.0/modern-normalize.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@200;400;800&family=Shrikhand&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
 </head>
+
 <body>
-    <h1>Webpack adfsad</h1>
-    <div id="root"></div>
+
+  <div class="container">
+    <div class="profile">
+      <div class="profile-feature cols">
+        <div>
+          <h1>Andrea Bibiana V.M.</h1>
+          <div class="lead">
+            <p>31 años. Cancún, México. Diseño y desarrollo web.</p>
+          </div>
+          <a href="works.html">ver selección de trabajos <span class="icon-hand"></span></a>
+          <a href="https://drive.google.com/file/d/107XeAqAg9ji1Z--IKFy7J7IXxddhnULM/view?usp=sharing" target="_blank">ver cv <span class="icon-hand"></span></a>
+        </div>
+        <img src="<%= require('./img/profile.jpg') %>" alt="Andrea y Momo" />
+      </div>
+
+      <h2>Historia</h2>
+      <div class="cols">
+        <div>
+          <h3>Creando la web desde 2001</h3>
+          <p>Hice mi primer sitio web cuando tenía 11 años y desde entonces no me he detenido. Llevo tabajando en el
+            campo desde 2013, evolucionando a través de los años, empezando como maquetadora y aprendiendo a lo largo de
+            los años las bases de programación front end, back end y manejo de bases de datos.</p>
+        </div>
+        <div class="profile-timeline">
+          <ol>
+            <li><b>2001.</b> Comencé a crear páginas web como pasatiempo.</li>
+            <li><b>2010.</b> Desarrollé el sitio de la estación de radio de mi univesidad.</li>
+            <li><b>2013.</b> Obtuve mi primer trabajo como diseñadora web.</li>
+            <li><b>2018.</b> Cambié mi enfoque hacia el desarrollo Front End.</li>
+          </ol>
+        </div>
+      </div>
+
+      <h2>Aptitudes</h2>
+      <div class="cols">
+        <div>
+          <p>
+            Lo que yo considero mi fortaleza es mi facilidad para trasladar a código los conceptos gráficos ideados por otros de la manera más óptima posible, sea esto maquetar un prototipo, adaptar un diseño existente a diferentes resoluciones para hacerlo responsivo, diseñar las interacciones apropiadas a cierto proyecto, etc.
+          </p>
+          <p>
+            En el ámbito de la funcionalidad, aunque también he estado a cargo de crear proyectos completos desde cero, tengo mayor experiencia dando mantenimiento a aplicaciones web existentes, ya sea para modificar su lógica, o para crear nuevos módulos que se acoplen a los lineamientos ya establecidos. 
+          </p>
+          <p>También he desempeñado a buen grado tareas relacionadas con el lenguaje, como revisión de textos, traducción, y hasta redacción de contenido original. Mis capacidades lingüísticas y comunicativas me hacen ideal para generar documentación, guías de uso, guías de estilo, propuestas de trabajo y presentaciones coorporativas.</p>
+        </div>
+
+        <div>
+          <h3>Experiencia laboral con:</h3>
+          <ul class="styled-list">
+            <li>
+              CSS, Sass, PostCSS, TailwindCSS, Material, Bootstrap
+            </li>
+            <li>
+              Javascript, Typescript, React, Vue, Node, Express, jQuery
+            </li>
+            <li>Adobe Photoshop, Adobe XD, Adobe Illustrator</li>
+            <li>Firebase Auth, Firebase Storage, Firestore</li>
+            <li>
+              PHP, Laravel, Slim, Yii, Wordpress
+            </li>
+            <li>Python, Django, Flask</li>
+            <li>
+              REST API, MySQL, PostgreSQL
+            </li>
+            <li>
+              Github, npm, yarn, webpack, grunt, gulp
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="highlight">
+        <h3>Tecnologías favoritas</h3>
+        <ul>
+          <li>CSS</li>
+          <li>Sass</li>
+          <li>TailwindCSS</li>
+          <li>Javascript</li>
+          <li>Typescript</li>
+          <li>React JS</li>
+          <li>Storybook</li>
+        </ul>
+      </div>
+
+      <h2>Personal</h2>
+
+      <div class="cols">
+        <div>
+
+        </div>
+        <div>
+          <h3>Cualidades</h3>
+          <p>Detallista, creativa y autodidacta.</p>
+    
+          <h3>Educación</h3>
+          <p>Estudios en Comunicación, Literatura y Lingüística.</p>
+    
+          <h3>Interéses</h3>
+          <p>En mi tiempo libre me gusta jugar videojuegos, experimentar en la cocina y hacerle cariñitos a mis gatos.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  </div>
 </body>
+
 </html>

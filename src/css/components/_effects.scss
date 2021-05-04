@@ -1,0 +1,15 @@
+.zoom-left,
+.zoom-right {
+  transition: transform ease-in-out 0.3s;
+  &:hover {
+    z-index: 100;
+    transition: transform ease-in-out 0.3s;
+    position: relative;
+  }
+}
+.zoom-left:hover {
+  transform: scale(1.75) translateX(-25%); 
+}
+.zoom-right:hover {
+  transform: scale(1.75) translateX(25%);
+}
