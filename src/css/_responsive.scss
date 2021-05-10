@@ -1,0 +1,138 @@
+.container {
+    width: auto;
+    max-width: 90%;
+}
+.cols {
+    display: block;
+}
+.profile-feature {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.profile-feature img {
+    order: -1;
+}
+.profile-feature div {
+    flex-basis: 100%;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+h2 {
+    font-size: 2rem;
+    color: #606c52;
+    margin-bottom: 20px;
+}
+.profile-timeline li {
+    line-height: 1.5rem;
+    text-align-last: left;
+    margin-bottom: 1rem;
+}
+.profile-timeline b {
+    color: #606c52;
+    font-size: inherit;
+    position: relative;
+    z-index: 0;
+    top: auto;
+    left: auto;
+}
+.highlight h3 {
+    color: #606c52;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    text-align: center;
+}
+.works article {
+    display: block;
+}
+.works article div.description {
+    margin-bottom: 2rem;
+}
+.works h2 {
+    margin-bottom: 4rem;
+}
+.works h2 + .featured {
+    margin-top: 0rem;
+}
+.feature .cols > div:first-of-type {
+    margin-bottom: 2rem;
+}
+@media (min-width: 780px) {
+    h1 {
+        font-size: 3rem;
+    }
+    .profile-timeline {
+        max-width: 500px;
+        margin: 0 auto;
+        margin-top: 2rem;
+    }
+    .profile-timeline li {
+        line-height: 3rem;
+        text-align-last: right;
+        margin-bottom: 0;
+    }
+    .profile-timeline b {
+        color: #e4e6c3;
+        font-size: 3.5rem;
+        position: absolute;
+        z-index: -1;
+        top: -0.5rem;
+        left: -0.5rem;
+    }
+    h2 {
+        color: #e4e6c3;
+        font-size: 8.875rem;
+        margin-bottom: 80px;
+    }
+    .highlight h3 {
+        color: #e4e6c3;
+        font-size: 2rem;
+        text-align: justify;
+        -moz-text-align-last: center;
+        text-align-last: center;
+    }
+    .works h2 {
+        margin-bottom: 80px;
+    }
+    .works h2 + .featured {
+        margin-top: -80px;
+    }
+    .feature .cols {
+        display: flex;
+    }
+}
+
+@media (min-width: 1200px) {
+    .cols {
+        display: flex;
+    }
+    .container {
+        width: 1080px;
+    }
+    .profile-feature img {
+        order: 0;
+    }
+    .profile-feature {
+        flex-wrap: nowrap;
+    }
+    .profile-feature div {
+        flex-basis: auto;
+    }
+    .profile-timeline {
+        max-width: auto;
+        margin: auto;
+        margin-top: 0rem;
+    }
+    .works article div.description {
+        margin-bottom: 0rem;
+    }
+    .works article {
+        display: flex;
+    }
+    .feature .cols > div:first-of-type {
+        margin-bottom: 0rem;
+    }
+}
